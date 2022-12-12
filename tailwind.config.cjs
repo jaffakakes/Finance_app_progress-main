@@ -15,10 +15,12 @@ module.exports = {
         },
       },
       screens: {
+        xxs: "350px",
         xs: "480px",
         ss: "620px",
         sm: "768px",
         md: "1060px",
+        mmd: "1130px",
         lg: "1200px",
         xl: "1700px",
       },

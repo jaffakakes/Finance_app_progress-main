@@ -1,4 +1,6 @@
-
+import { Banner } from './components/Banner';
+import { Benefits1 } from './components/Benefits1';
+import { Benefits2 } from './components/Benefits2';
 import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar'
 import styles from "./style";
@@ -13,8 +15,14 @@ export default function Home() {
        <Navbar/>
       </div>
     </div>
-    <div>
-        <Hero/>
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.boxWidth}`}>
+            <Hero/>
+            <Benefits1/>
+            <Banner/>
+            <Benefits2/>
+      </div>
+      
       </div>
 </div>
       </>
