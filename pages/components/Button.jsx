@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({ styles }) => (
+const Button = ({ styles, Title}) => (
   <button type="button" className={`py-4 px-6 font-outfit font-medium text-[18px] text-primary bg-[#F3F9FF] rounded-[10px] outline-none ${styles}`}>
-    Join the waiting list
+    {Title}
   </button>
 );
 

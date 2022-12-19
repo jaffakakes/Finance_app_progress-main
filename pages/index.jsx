@@ -1,11 +1,19 @@
-import { Banner } from './components/Banner';
+import { Heading } from './components/Heading';
 import { Benefits1 } from './components/Benefits1';
-import { Benefits2 } from './components/Benefits2';
+import Footer from './components/Footer';
 import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar'
 import styles from "./style";
+import Step1 from './components/Example/Step1';
+import { getUsers } from './utils/users';
+import {useEffect} from 'react';
+
+
 
 export default function Home() {
+  useEffect(() => {
+    getUsers();
+  },[])
   return (
     <>
     <div className="bg-primary w-full overflow-hidden">
@@ -19,8 +27,10 @@ export default function Home() {
     <div className={`${styles.boxWidth}`}>
             <Hero/>
             <Benefits1/>
-            <Banner/>
-            <Benefits2/>
+            <Heading/>
+
+            <Step1/>
+     <Footer/>
       </div>
       
       </div>
